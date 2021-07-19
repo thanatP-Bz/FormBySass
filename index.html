@@ -5,26 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./SASS/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="image-container">
-        <img src="" alt="" />
-      </div>
-      <div class="form">
-        <form action="">
-          <h1>Please Welcome</h1>
-          <div class="form-control">
-            <label for="username">Username</label>
-            <input type="text" id="username" />
+    <div class="body-container">
+      <div class="container">
+        <div class="image-container"></div>
+        <div class="form-relative">
+          <div class="form-container">
+            <form action="submit">
+              <h1>Welcome To ThaiCanvas</h1>
+              <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" />
+                <small>Error Message</small>
+              </div>
+              <div class="form-control">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter password"
+                />
+                <small>Error Message</small>
+              </div>
+              <button type="submit">Login</button>
+              <div class="forget-link">
+                <p>Forgot <a href="">Username/Password?</a></p>
+              </div>
+              <div class="create-account">
+                <p>Create Your <a href="">Account</a></p>
+              </div>
+            </form>
           </div>
-          <div class="form-control">
-            <label for="password"></label>
-            <input type="password" id="password" />
-          </div>
-          <button type="submit">Login</button>
-        </form>
+        </div>
       </div>
     </div>
   </body>

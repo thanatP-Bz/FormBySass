@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  background-color: rgb(252, 216, 237);
+}
+
+.body-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #fff;
+  height: 80vh;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+
+  .image-container {
+    background-color: rgb(122, 216, 113);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50%;
+    height: 100%;
+    background-image: url(../image/jenn-kosar-rzPVSqQjjqs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form-relative {
+    min-height: 100%;
+    width: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    .form-container {
+      max-width: 450px;
+
+      form {
+        padding: 3rem;
+        position: relative;
+
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+
+        .form-control {
+          position: relative;
+
+          label {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 2px;
+            margin-left: 10px;
+            font-weight: bold;
+          }
+
+          &.error input {
+            border-color: #ee0e0e;
+          }
+
+          input {
+            width: 100%;
+            border: 2px solid #e4e1e1;
+            padding: 15px;
+            border-radius: 25px;
+
+            &:focus {
+              outline: 0;
+              border-color: lightgray;
+            }
+          }
+
+          &.error small {
+            visibility: visible;
+          }
+
+          small {
+            margin-left: 10px;
+            visibility: hidden;
+          }
+        }
+
+        button {
+          width: 100%;
+          display: inline-block;
+          padding: 15px;
+          border-radius: 25px;
+          border: none;
+          margin-top: 15px;
+          font-size: 1rem;
+          cursor: pointer;
+          color: #fff;
+          font-weight: bolder;
+          font-family: "Open Sans", sans-serif;
+          background-color: rgb(219, 92, 166);
+
+          &:hover {
+            background-color: hsl(325, 63%, 56%);
+          }
+        }
+      }
+
+      .forget-link {
+        text-align: center;
+        margin-top: 14px;
+        font-weight: bold;
+
+        p {
+          color: #949191;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      .create-account {
+        text-align: center;
+        font-weight: bold;
+        padding: 5px;
+
+        p {
+          color: #949191;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
