@@ -80,6 +80,10 @@ body {
             border-color: #ee0e0e;
           }
 
+          &.success input {
+            border-color: #0eee19;
+          }
+
           input {
             width: 100%;
             border: 2px solid #e4e1e1;
@@ -94,6 +98,7 @@ body {
 
           &.error small {
             visibility: visible;
+            color: #ee0e0e;
           }
 
           small {

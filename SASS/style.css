@@ -101,6 +101,10 @@ body {
   border-color: #ee0e0e;
 }
 
+.container .form-relative .form-container form .form-control.success input {
+  border-color: #0eee19;
+}
+
 .container .form-relative .form-container form .form-control input {
   width: 100%;
   border: 2px solid #e4e1e1;
@@ -115,6 +119,7 @@ body {
 
 .container .form-relative .form-container form .form-control.error small {
   visibility: visible;
+  color: #ee0e0e;
 }
 
 .container .form-relative .form-container form .form-control small {
