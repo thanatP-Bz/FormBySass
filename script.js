@@ -13,6 +13,8 @@ const showError = (input, message) => {
 const showSuccess = (input, message) => {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
+  const small = formControl.querySelector("small");
+  small.innerText = message;
 };
 
 form.addEventListener("submit", (e) => {

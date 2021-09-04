@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,11 +19,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   max-width: 70%;
   margin: 0 auto;
 }
@@ -37,7 +37,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container .image-container {
@@ -62,11 +62,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0;
 }
 
@@ -172,5 +172,11 @@ body {
 
 .container .form-relative .form-container .create-account a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .button {
+    background-color: rgb(92, 219, 141);
+  }
 }
 /*# sourceMappingURL=style.css.map */
